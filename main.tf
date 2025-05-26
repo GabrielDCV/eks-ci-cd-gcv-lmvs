@@ -117,7 +117,7 @@ resource "kubernetes_config_map_v1_data" "aws_auth_patch" {
   module "github_pipeline" {
     source     = "./modules/github_pipeline"
     name       = "gh-actions-dp019"
-    repository = "GabrielDCV/eks-cicd-gcv-lmvs"
+    repository = "GabrielDCV/eks-ci-cd-gcv-lmvs"
     branch     = "main"
     tags       = var.node_group_tags
   }
